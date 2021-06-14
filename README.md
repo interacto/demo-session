@@ -21,7 +21,7 @@ The class `DataService` already provides a method `setNewRandomColor` to set its
 **Question 1** Implement this feature without considering undo/redo.
 
 - With Interacto, `clicksBinder(nb)` refers to an N-click interaction.
-
+- Using the Web/Angular API: a mouse event has an attribute `detail` that refers to the number of clicks.
 
 **Question 2** Adapt your code to be able to undo/redo color changes.
 
@@ -54,7 +54,9 @@ The rectangle to move is the rectangle `rec` defined in the HTML file.
 
 **Question 1** Implement this feature without considering undo/redo.
 
-Note that the Interacto `dndBinder(true)` may help you. The attribute `dataService.position` defines the x/y coordinates of the rectangle.
+Note that the Interacto `dndBinder(true)` may help you.
+Using the Web/Angular API you can use the classical `mousedown`, `mouseup`, `mousemove` event listeners or https://v7.material.angular.io/cdk/drag-drop/overview#getting-started.
+Note that the attribute `dataService.position` defines the x/y coordinates of the rectangle.
 
 
 **Question 2** Adapt your code to be able to undo/redo the moves.

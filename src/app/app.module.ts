@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Tp2Component } from './component/tp2/tp2.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import {InteractoModule} from 'interacto-angular';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        DragDropModule
+        DragDropModule,
+        InteractoModule
     ],
   providers: [],
   bootstrap: [AppComponent]
